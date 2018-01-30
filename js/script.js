@@ -17,10 +17,10 @@
 
 // Songs
 var mySong = {
-	"title":"24K Magic",
-	"artist":"Bruno Mars",
-	"mp3-url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
-	"image-url":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
+	"title":"loyalty",
+	"artist":"kendrick lamar",
+	"mp3_url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
+	"image-url":"https://i.ytimg.com/vi/O8nD1xCoAvc/hqdefault.jpg",
 }
 
 var myPlayList = [
@@ -39,7 +39,7 @@ var myPlayList = [
 	{
 		"title":"Sorry",
 		"artist":"Justin Bieber",
-		"mp3-url":"https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF",
+		"mp3_url":"https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF",
 		"image-url":"http://assets-s3.usmagazine.com/uploads/assets/articles/93827-justin-biebers-sorry-choreographer-spills-video-style-secrets-parris-goebel/1445638548_justin-bieber-sorry-dancers-zoom.jpg",
 	}
 
@@ -49,8 +49,11 @@ var myPlayList = [
 
 // DOCUMENT READY FUNCTION
 $( document ).ready(function() {
-  
-
+$('body').append("<p>title:"+mySong.title+"</p>" );
+$('body').append("<p>artist:"+mySong.artist+"</p>" );
+$('body').append("<p>link:"+mySong.mp3_url+"</p>" );
+//$('body').append(<img src= "https://i.ytimg.com/vi/O8nD1xCoAvc/hqdefault.jpg"> });
+$("img").attr("src","https://i.ytimg.com/vi/O8nD1xCoAvc/hqdefault.jpg");
 
 
 });
